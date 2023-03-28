@@ -6,7 +6,7 @@ interface CardProps {
   link: string;
 }
 
-export function Card({ title, description, link }: CardProps) {
+export const Card = ({ title, description, link }: CardProps) => {
   return (
     <div className="link-card">
       <h2>{title}</h2>
