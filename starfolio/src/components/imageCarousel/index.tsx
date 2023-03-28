@@ -1,6 +1,6 @@
 import Carousel from "nuka-carousel/lib/carousel";
 import Go from "../../../public/go.png";
-import Impulse from "../../../public/nlwimpulse.png";
+import Impulse from "../../../public/FedGet.png";
 import Goldies from "../../../public/goldie.png";
 import Sherlock from "../../../public/sherlock.png";
 import "./carousel.css";
