@@ -1,8 +1,8 @@
 ---
-import Card from "../components/card";
-import ImageCarousel from "../components/imageCarousel";
+import {Card} from "../components/card";
+import { ImageCarousel } from "../components/imageCarousel";
 import Layout from "../layouts/Layout.astro";
-import { Icon } from 'astro-icon'
+import { Icon } from "astro-icon";
 ---
 
 <Layout title="</Carlos>">
@@ -35,14 +35,28 @@ import { Icon } from 'astro-icon'
     <p class="projects">
       Tenho uma seleta de projetos no meu Github
       <strong>Que vão desde aplicações Full-Stack até Bots</strong>. Fique à
-      vontade para explorar. 
+      vontade para explorar.
     </p>
-      <ImageCarousel client:load />
-	  <div class="social-grid">
-		<a href='https://github.com/CarlosEduardoAD' target="_blank"><div class='social-badge'><Icon name='ph:github-logo-light'/>Github</div></a>
-		<a target="_blank" href='https://www.linkedin.com/in/carlos-eduardo-mariano-regis-990222219/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bbi1AoiFbTaKImsLfgLia0A%3D%3D'><div class='social-badge'><Icon name='ph:linkedin-logo-light'/>Linkedin</div></a>
-		<a href='https://discord.com/' target="_blank"><div class='social-badge'><Icon name='ph:discord-logo-light'/>Discord</div></a>
-	  </div>
+    <ImageCarousel client:load />
+    <div class="social-grid">
+      <a href="https://github.com/CarlosEduardoAD" target="_blank"
+        ><div class="social-badge">
+          <Icon name="ph:github-logo-light" />Github
+        </div></a
+      >
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/carlos-eduardo-mariano-regis-990222219/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bbi1AoiFbTaKImsLfgLia0A%3D%3D"
+        ><div class="social-badge">
+          <Icon name="ph:linkedin-logo-light" />Linkedin
+        </div></a
+      >
+      <a href="https://discord.com/" target="_blank"
+        ><div class="social-badge">
+          <Icon name="ph:discord-logo-light" />Discord
+        </div></a
+      >
+    </div>
   </main>
 </Layout>
 
@@ -77,22 +91,22 @@ import { Icon } from 'astro-icon'
     color: rgb(221, 215, 215);
     margin-bottom: 3rem;
   }
-  .social-grid{
-	margin-top : 3rem;
-	display: grid;
-	grid-template-columns: auto auto auto;
-	place-items: center;
-	text-decoration: none;
+  .social-grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    text-decoration: none;
   }
 
-  @media screen and (max-width:768px){
-	.social-grid{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap : 12px;
-		flex-wrap: wrap;
-	}
+  @media screen and (max-width: 768px) {
+    .social-grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
   }
 
   .projects {
@@ -105,27 +119,27 @@ import { Icon } from 'astro-icon'
     color: rgb(221, 215, 215);
     margin-bottom: 3rem;
   }
-  .social-badge{
-	color: rgb(221, 215, 215);
-	padding : 1rem;
-	border : 1px solid var(--white-1);
-	border-radius : 5px;
-	display: grid;
-	place-items: center;
-	grid-template-columns: 1.3rem auto;
-	gap : 8px;
+  .social-badge {
+    color: rgb(221, 215, 215);
+    padding: 1rem;
+    border: 1px solid var(--white-1);
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1.3rem auto;
+    gap: 8px;
   }
 
-  @media screen and (max-width:768px){
-	.social-badge{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: center;
-		gap : 12px;
-		min-width: 120px;
-		min-height: 50px;
-	}
+  @media screen and (max-width: 768px) {
+    .social-badge {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-width: 120px;
+      min-height: 50px;
+    }
   }
 
   .instructions code {

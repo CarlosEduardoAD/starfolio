@@ -5,7 +5,7 @@ import Goldies from "../../../public/goldie.png";
 import Sherlock from "../../../public/sherlock.png";
 import "./carousel.css";
 
-export default function ImageCarousel() {
+export function ImageCarousel() {
   return (
     <>
     <div className="control">
