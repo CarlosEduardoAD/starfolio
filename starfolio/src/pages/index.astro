@@ -1,5 +1,5 @@
 ---
-import {Card} from "../components/card/index";
+import { Card } from "../components/card/index";
 import { ImageCarousel } from "../components/imageCarousel/index";
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
@@ -31,13 +31,15 @@ import { Icon } from "astro-icon";
         link="/frameworks"
       />
     </ul>
-    <a>Ver mais</a>
+    <div class="see-more">
+      <a href='/coming-soon'>Ver mais</a>
+    </div>
     <p class="projects">
       Tenho uma seleta de projetos no meu Github
       <strong>Que vão desde aplicações Full-Stack até Bots</strong>. Fique à
       vontade para explorar.
     </p>
-    <ImageCarousel client:load client:only='react' />
+    <ImageCarousel client:load client:only="react" />
     <div class="social-grid">
       <a href="https://github.com/CarlosEduardoAD" target="_blank"
         ><div class="social-badge">
@@ -91,12 +93,36 @@ import { Icon } from "astro-icon";
     color: rgb(221, 215, 215);
     margin-bottom: 3rem;
   }
+
+  .see-more {
+	margin-bottom : 3rem;
+	padding: 12px;
+	max-width: 80px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: var(--black-2);
+	color: var(--white-2);
+	cursor : pointer;
+  }
+
+  .see-more a {
+	text-decoration: none;
+	color: var(--white-2);
+  }
   .social-grid {
     margin-top: 3rem;
     display: grid;
     grid-template-columns: auto auto auto;
     place-items: center;
-    text-decoration: none;
+    text-decoration: none !important;
+  }
+
+  .social-grid a{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    text-decoration: none !important;
   }
 
   @media screen and (max-width: 768px) {
@@ -122,13 +148,14 @@ import { Icon } from "astro-icon";
   .social-badge {
     color: rgb(221, 215, 215);
     padding: 1rem;
-    border: 1px solid var(--white-1);
     border-radius: 5px;
     display: grid;
     place-items: center;
     grid-template-columns: 1.3rem auto;
     gap: 8px;
+	background-color: var(--black);
   }
+
 
   @media screen and (max-width: 768px) {
     .social-badge {
@@ -157,6 +184,6 @@ import { Icon } from "astro-icon";
     display: grid;
     gap: 1rem;
     padding: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 </style>
