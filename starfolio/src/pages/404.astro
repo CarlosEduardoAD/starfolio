@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon";
+---
+
+<Layout title="</404>">
+    <main class="page-build">
+    <p>Página em construção</p>
+    <a href='/'>Que tal ver outras coisas ? <Icon size='20' name='ph:arrow-fat-line-right-light' /></a>
+    </main>
+  </Layout>
+
+<style>
+    .page-build{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .page-build p {
+        color : var(--white-1);
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .page-build a {
+        display : flex;
+        align-items: center;
+        gap : 8px;
+        color : var(--white-2);
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 0.5rem;
+        border: 1px solid var(--white-2);
+        border-radius: 5px;
+    }
+</style>

@@ -1,0 +1,11 @@
+.carousel-image :hover {
+  background: black;
+  opacity: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .control {
+    display: none;
+  }
+}

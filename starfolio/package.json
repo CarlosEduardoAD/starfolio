@@ -1,0 +1,24 @@
+{
+  "name": "starfolio",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^2.1.0",
+    "@fontsource/montserrat": "^4.5.14",
+    "@fontsource/twinkle-star": "^4.5.9",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "astro": "^2.1.7",
+    "astro-icon": "^0.8.0",
+    "nuka-carousel": "^5.5.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
