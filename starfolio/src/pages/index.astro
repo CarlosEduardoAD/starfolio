@@ -3,6 +3,7 @@ import { Card } from "../components/card/index";
 import { ImageCarousel } from "../components/imageCarousel/index";
 import Layout from "../layouts/Layout.astro";
 import { Icon } from "astro-icon";
+export const prerender = true;
 ---
 
 <Layout title="</Carlos>">
@@ -18,7 +19,7 @@ import { Icon } from "astro-icon";
       <Card
         title="Como os frameworks Web te iludem"
         description="Já viu aqueles testes de performance de frameworks back-end ? Será que isso realmente é relevante ?"
-        link="/frameworks"
+        link="/posts/frameworks"
       />
       <Card
         title="Velocidade e Simplicidade com Golang"
