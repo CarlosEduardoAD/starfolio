@@ -1,8 +1,8 @@
 import Carousel from "nuka-carousel/lib/carousel";
-import Go from "../../../public/go.png";
-import Impulse from "../../../public/FedGet.png";
-import Goldies from "../../../public/goldie.png";
-import Sherlock from "../../../public/sherlock.png";
+import Go from '../../assets/go.png'
+import Impulse from "../../assets/FedGet.png";
+import Goldies from "../../assets/goldie.png";
+import Sherlock from "../../assets/sherlock.png";
 import "./carousel.css";
 
 export const ImageCarousel = () => {
