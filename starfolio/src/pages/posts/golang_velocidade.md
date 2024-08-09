@@ -27,4 +27,4 @@ Quais as suas ferramentas ?: A linguagem pode ser utilizada para vários propós
 Como posso começar a usar ela ?: Você pode começar usando ela no editor de código on-line Replit, mas caso queira utilizar ela em sua máquina, siga os passos de instalação do site oficial, é bem fácil instalar ela e você provavelmente não vai ter muitos problemas.
 
 
-Um dia talvez eu ensine um pouco a como utilizar o Gin, mas isso é história para outro dia. De qualquer forma, espero que tenha ficado curioso em pesquisar um pouco mais sobre essa linguagem. Até mais.
+Depois em outros posts meus vou falar sobre minha experiência com outros frameworks de Golang
